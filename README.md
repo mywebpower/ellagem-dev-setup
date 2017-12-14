@@ -10,10 +10,7 @@ Enter commands one at a time.
 
 - sudo dpkg --add-architecture i386 && sudo add-apt-repository ppa:ubuntu-wine/ppa -y
 - sudo apt-get update -q
-- sudo apt-get install mono-devel wine1.8
-
-- sudo apt-get install icnsutils graphicsmagick xz-utils nsis
-
+- sudo apt-get install icnsutils graphicsmagick xz-utils nsis make git build-essential mono-devel wine1.8
 - curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh
 - chmod +x nodesource_setup.sh
 - ./nodesource_setup.sh
