@@ -15,6 +15,8 @@ Enter commands one at a time.
 - sudo apt-get install icnsutils graphicsmagick xz-utils nsis
 
 - curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh
+- chmod +x nodesource_setup.sh
+- ./nodesource_setup.sh
 - sudo apt-get install nodejs
 - curl https://install.meteor.com/ | sh
 - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
