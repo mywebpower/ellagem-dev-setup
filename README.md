@@ -24,4 +24,6 @@ Enter commands one at a time.
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 - sudo apt-get update && sudo apt-get install yarn
 
+Then you can git clone ellagem and meteor-wallet-dapp into one folder and follow there setup 
+
 
