@@ -33,3 +33,36 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 Then you can git clone ellagem and meteor-wallet-dapp into one folder and follow there setup 
 
 
+## MAC High Sierra
+Install Homebrew
+
+- /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+ 
+Install Parity (beta)
+- brew tap paritytech/paritytech
+- brew install parity
+
+Download ellaism.json
+- wget -O ellaism.json https://raw.githubusercontent.com/ellaism/parity-config/master/ellaism.json
+
+Start Parity
+- parity --chain "ellaism.json" --usd-per-tx 0
+
+Install Dependencies
+- brew install npm
+- curl https://install.meteor.com/ | sh
+- curl -o- -L https://yarnpkg.com/install.sh | bash
+- yarn global add electron@1.7.9
+- yarn global add gulp
+- source ~/.bash_profile
+
+Setup Ellagem
+- git clone https://github.com/ellaism-io/ellagem.git
+- cd ellagem
+- yarn
+- cd interface && meteor --no-release-check
+
+open new terminal window
+in ellagem dir
+
+- yarn dev:electron --rpc ~/Library/Application\ Support/io.parity.ethereum/jsonrpc.ipc --node-networkid 64 --node-datadir ~/Library/Ellaism/mainnet/nodes/
